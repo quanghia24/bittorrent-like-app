@@ -1,22 +1,63 @@
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 from django.contrib.auth import get_user_model
 import json
-from .models import CustomUser, Peer
+from .models import CustomUser, Peer, Torrent
 import logging 
+from datetime import datetime, timedelta
 
 #now we will Create and configure logger 
-logging.basicConfig(filename='tracker.log',
-                    filemode='a',
-                    format='%(asctime)s %(message)s',
-                    datefmt='%H:%M:%S',
-                    level=logging.INFO)
+# Set up basic logging configuration
+logging.basicConfig(
+    filename='tracker.log',  # Log file path
+    filemode='a',            # Append to the log file
+    format='%(asctime)s %(message)s',  # Log message format
+    datefmt='%H:%M:%S',      # Time format in the logs
+    level=logging.INFO      # Capture all log levels
+)
 
-
+# Get the logger object
 logger = logging.getLogger()
 
+# Add custom filter to the logger
+
 User = get_user_model()
+
+@api_view(['POST'])
+def announce(request):
+    username = request.data.get("username")
+    print(f"{username} told that hes still alive")
+
+    if not username:
+        return Response({"error": "Missing required fields"}, status=409)
+
+    user = User.objects.get(username=username)
+    # Update or create peer entry
+    try:
+        peers = Peer.objects.filter(user = user)
+
+    except Peer.DoesNotExist:
+        return Response({"error": "Failed to update peer"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+    for peer in peers:
+        peer.update_last_seen()
+        peer.save()
+    return Response({"message": "Peer updated successfully"})
+
+# def mark_inactive_peers():
+#     inactive_time = datetime.now() - timedelta(seconds=10)  # Adjust timeout as needed
+#     peers_to_mark = Peer.objects.filter(last_seen__lt=inactive_time, is_active=True)
+#     for peer in peers_to_mark:
+#         peer.mark_inactive()
+
+@api_view(['POST'])
+def get_peers(request):
+    info_hash = request.data.get("info_hash")
+    torrents = Torrent.objects.filter(info_hash=info_hash)
+    peers = [{torrent.peer.address} for torrent in torrents]
+    return Response({"peers": list(peers)})
 
 @api_view(['POST'])
 def create_user(request):
@@ -42,6 +83,7 @@ def login_user(request):
         return Response({"error": "Username and password are required"}, status=status.HTTP_400_BAD_REQUEST)
 
     user = User.objects.filter(username=username).first()
+
     if user and user.check_password(password):
         logger.info(f"Account [{username}] has enter the network") 
         return Response({"message": "Login successful", "username": user.username}, status=status.HTTP_200_OK)
@@ -74,11 +116,16 @@ def logout_user(request):
 def add_filenames(request):
     username = request.data.get("username")
     address = request.data.get("address")
-    filenames = request.data.get("filenames")  # A list of filenames to be added
+    info_hash = request.data.get("info_hash")
+    name = request.data.get("name")
+    piece_length = request.data.get("piece_length")
+    filenames = request.data.get("filenames")
 
-    if not username or not filenames:
-        return Response({"error": "Username and filenames are required"}, status=status.HTTP_400_BAD_REQUEST)
 
+    if not all([username, address, name, info_hash, piece_length, filenames]):
+        return Response({"error": "Missing required fields"}, status=status.HTTP_400_BAD_REQUEST)
+
+    
     # Get the user
     user = CustomUser.objects.filter(username=username).first()
     if not user:
@@ -86,27 +133,24 @@ def add_filenames(request):
 
     # Check if a peer exists for the user, if not, create one
     peer, created = Peer.objects.get_or_create(user=user, address=address)
-
-    # Add filenames to the peer
-    peer.add_filename(filenames)
-    logger.info(f"Account [{username}] has published [{filenames}]") 
-    return Response({"message": "Filenames added successfully", "filenames": peer.get_filenames()}, status=status.HTTP_200_OK)
-
-
-@api_view(['POST'])
-def get_peer_list(request):
-    file = request.data.get('filename')
-
-    peers = Peer.objects.all()
-    peers_address = []
-
-    for peer in peers:
-        if file in peer.filenames:
-            peers_address.append(peer.address)
+    peer.add_torrent(info_hash)
     
-    if not peers_address:
-        return Response({"peers": "No peers found"}, status=status.HTTP_200_OK)
-    return Response({"peers": peers_address}, status=status.HTTP_200_OK)
+    # add torrent information
+    try:
+        torrent = Torrent.objects.create(
+            peer=peer,  # Associate the torrent with the peer
+            name = name,
+            info_hash=info_hash, 
+            piece_length = piece_length,
+            filenames = filenames
+        )
+            
+    except Exception as e:
+        return Response({"error": f"Failed to add torrent: {str(e)}"}, status=status.HTTP_400_BAD_REQUEST)
+
+    logger.info(f"Account [{username}] has published", info_hash) 
+    return Response({"message": "Torrent added successfully", "filenames": peer.get_torrents()}, status=status.HTTP_200_OK)
+
 
 @api_view(['POST'])
 def update_freq(request):
@@ -117,5 +161,25 @@ def update_freq(request):
 
     user = CustomUser.objects.filter(username=username).first()
 
-    peer = Peer.objects.get(user=user)
-    peer.update_freq()
+    user.update_freq()
+    logger.info(f"{username}'s upload frequency got increased by one, [{user.freq}]")
+
+
+# admin request, get all orders in the system
+@api_view(['GET'])
+def get_all_orders(request):
+    pass
+
+# user request, get all orders that user has placed
+@api_view(['POST'])
+def get_my_orders(request):
+    username = request.data.get('username')
+    pass
+
+# user request, create a new order
+@api_view(['POST'])
+def create_order(request):
+    username = request.data.get('username')
+    pass
+
+

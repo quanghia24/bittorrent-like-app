@@ -1,195 +1,262 @@
-04:11:48 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:14:10 Account [nghia1] has left the network
-04:14:19 Account [nghia1] has enter the network
-04:14:26 Internal Server Error: /api/add-filename/
-Traceback (most recent call last):
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py", line 91, in add_filenames
-    peer.add_filename(filenames)
-    ^^^^^^^^^^^^^^^^^
-AttributeError: 'tuple' object has no attribute 'add_filename'
-04:16:39 Account named [nghia1] just got created
-04:16:46 Account [nghia1] has enter the network
-04:16:55 Not Found: /api/logout-user/
-04:18:57 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
-04:19:34 Account [nghia1] has enter the network
-04:19:38 Not Found: /api/logout-user/
-04:21:09 Account [nghia1] has enter the network
-04:21:11 Not Found: /api/logout-user/
-04:22:14 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
-04:25:43 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:26:02 Account [nghia1] has enter the network
-04:26:56 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:27:48 Account [nghia1] has enter the network
-04:27:50 Account [nghia1] has left the swarm
-04:28:13 Account [nghia1] has enter the network
-04:28:28 Internal Server Error: /api/add-filename/
-Traceback (most recent call last):
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py", line 92, in add_filenames
-    peer.add_filename(filenames)
-    ^^^^^^^^^^^^^^^^^
-AttributeError: 'tuple' object has no attribute 'add_filename'
-04:28:36 Internal Server Error: /api/add-filename/
-Traceback (most recent call last):
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py", line 92, in add_filenames
-    peer.add_filename(filenames)
-    ^^^^^^^^^^^^^^^^^
-AttributeError: 'tuple' object has no attribute 'add_filename'
-04:30:37 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:30:47 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:30:54 Account [nghia1] has published [hi]
-04:31:39 Account [nghia1] has published [node.torrent]
-04:36:09 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:36:27 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:36:44 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:36:59 Account [quanghia] has enter the network
-04:42:22 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:42:25 Account [quanghia] has left the swarm
-04:46:01 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
-04:46:38 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
-04:46:48 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:49:17 Account [nghia1] has enter the network
-04:49:54 Account [nghia1] has enter the network
-04:50:09 Account [nghia1] has published [hello hi]
-04:50:28 Account named [nghia2] just got created
-04:50:36 Account [nghia2] has enter the network
-04:50:44 Account [nghia2] has published [hi hello]
-04:51:05 Account named [nghia3] just got created
-04:51:12 Account [nghia3] has enter the network
-04:51:54 Account [nghia3] has left the swarm
-04:52:02 Account [nghia3] has enter the network
-04:52:11 Method Not Allowed: /api/get-peer-list/
-04:53:03 Account [nghia3] has left the swarm
-04:53:44 Account [nghia1] has enter the network
-04:53:45 Account [nghia1] has left the swarm
-04:53:45 Account [nghia1] has left the network
-04:54:18 Account [nghia2] has enter the network
-04:54:19 Account [nghia2] has left the swarm
-04:54:19 Account [nghia2] has left the network
-04:54:44 Account [nghia1] has enter the network
-04:54:47 Account [nghia1] has published [hello]
-04:55:07 Account [nghia2] has enter the network
-04:55:09 Account [nghia2] has published [hello hi]
-04:55:26 Account [nghia3] has enter the network
-04:55:53 Account [nghia3] has left the swarm
-04:56:03 Account [nghia3] has enter the network
-04:56:06 Method Not Allowed: /api/get-peer-list/
-04:57:09 Account [nghia3] has left the swarm
-04:57:18 Account [nghia3] has enter the network
-04:57:20 Method Not Allowed: /api/get-peer-list/
-04:57:49 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-04:57:51 Account [nghia3] has left the swarm
-04:57:59 Account [nghia3] has enter the network
-05:00:03 Account [nghia3] has left the swarm
-05:00:11 Account [nghia3] has enter the network
-05:00:47 Account [nghia3] has left the swarm
-05:00:57 Account [nghia3] has enter the network
-05:01:21 Account [nghia3] has left the swarm
-05:01:32 Account [nghia3] has enter the network
-05:02:10 Account [nghia3] has left the swarm
-05:02:19 Account [nghia3] has enter the network
-05:05:09 Account [nghia3] has left the swarm
-05:05:21 Account [nghia3] has enter the network
-05:07:06 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
-05:10:18 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-05:10:37 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/models.py changed, reloading.
-03:05:28 Not Found: /
-03:05:52 Account named [nghia4] just got created
-03:06:22 Unauthorized: /api/login-user/
-03:06:30 Account [nghia1] has enter the network
-03:06:38 Account [nghia1] has left the swarm
-03:06:55 Account [nghia1] has enter the network
-03:07:16 Account [nghia1] has published [hello.torrent hi.torrent]
-03:07:33 Account [nghia1] has left the swarm
-03:07:33 Account [nghia1] has left the network
-03:07:55 Account [nghia1] has enter the network
-03:08:25 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
-03:08:45 Account [nghia1] has published [hi hello world]
-03:08:46 Not Found: /favicon.ico
-03:09:21 Account [nghia2] has enter the network
-03:09:45 Account [nghia2] has published [hello]
-03:10:07 Account [nghia3] has enter the network
-03:10:57 Account [nghia2] has left the swarm
-03:10:57 Account [nghia2] has left the network
-03:11:14 Not Found: /favicon.ico
-03:11:51 Account [nghia2] has enter the network
-03:11:56 Account [nghia2] has published [hello hi]
-03:14:30 Account [nghia2] has left the swarm
-03:14:30 Account [nghia2] has left the network
-03:14:32 Account [nghia3] has left the swarm
-03:14:35 Account [nghia1] has left the swarm
-03:14:35 Account [nghia1] has left the network
+17:46:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" (scheduled at 2024-11-12 17:46:54.074127+00:00)
+17:46:54 Marked 0 peers as inactive.
+17:46:54 currently have 0 peers inactive.
+17:46:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" executed successfully
+17:46:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" (scheduled at 2024-11-12 17:46:54.264656+00:00)
+17:46:54 Marked 0 peers as inactive.
+17:46:54 currently have 0 peers inactive.
+17:46:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" executed successfully
+17:46:59 Account named [nghia2] just got created
+17:47:04 Bad Request: /api/logout-user/
+17:47:04 Account [nghia2] has enter the network
+17:47:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" (scheduled at 2024-11-12 17:47:09.074127+00:00)
+17:47:09 Marked 0 peers as inactive.
+17:47:09 currently have 0 peers inactive.
+17:47:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" executed successfully
+17:47:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" (scheduled at 2024-11-12 17:47:09.264656+00:00)
+17:47:09 Marked 0 peers as inactive.
+17:47:09 currently have 0 peers inactive.
+17:47:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" executed successfully
+17:47:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" (scheduled at 2024-11-12 17:47:24.074127+00:00)
+17:47:24 Marked 0 peers as inactive.
+17:47:24 currently have 0 peers inactive.
+17:47:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" executed successfully
+17:47:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" (scheduled at 2024-11-12 17:47:24.264656+00:00)
+17:47:24 Marked 0 peers as inactive.
+17:47:24 currently have 0 peers inactive.
+17:47:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" executed successfully
+17:47:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" (scheduled at 2024-11-12 17:47:39.074127+00:00)
+17:47:39 Marked 0 peers as inactive.
+17:47:39 currently have 0 peers inactive.
+17:47:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" executed successfully
+17:47:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" (scheduled at 2024-11-12 17:47:39.264656+00:00)
+17:47:39 Marked 0 peers as inactive.
+17:47:39 currently have 0 peers inactive.
+17:47:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" executed successfully
+17:47:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" (scheduled at 2024-11-12 17:47:54.074127+00:00)
+17:47:54 Marked 0 peers as inactive.
+17:47:54 currently have 0 peers inactive.
+17:47:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" executed successfully
+17:47:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" (scheduled at 2024-11-12 17:47:54.264656+00:00)
+17:47:54 Marked 0 peers as inactive.
+17:47:54 currently have 0 peers inactive.
+17:47:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" executed successfully
+17:48:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" (scheduled at 2024-11-12 17:48:09.074127+00:00)
+17:48:09 Marked 0 peers as inactive.
+17:48:09 currently have 0 peers inactive.
+17:48:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" executed successfully
+17:48:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" (scheduled at 2024-11-12 17:48:09.264656+00:00)
+17:48:09 Marked 0 peers as inactive.
+17:48:09 currently have 0 peers inactive.
+17:48:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" executed successfully
+17:48:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" (scheduled at 2024-11-12 17:48:24.074127+00:00)
+17:48:24 Marked 0 peers as inactive.
+17:48:24 currently have 0 peers inactive.
+17:48:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" executed successfully
+17:48:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" (scheduled at 2024-11-12 17:48:24.264656+00:00)
+17:48:24 Marked 0 peers as inactive.
+17:48:24 currently have 0 peers inactive.
+17:48:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" executed successfully
+17:48:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" (scheduled at 2024-11-12 17:48:39.074127+00:00)
+17:48:39 Marked 0 peers as inactive.
+17:48:39 currently have 0 peers inactive.
+17:48:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" executed successfully
+17:48:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" (scheduled at 2024-11-12 17:48:39.264656+00:00)
+17:48:39 Marked 0 peers as inactive.
+17:48:39 currently have 0 peers inactive.
+17:48:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" executed successfully
+17:48:42 Account named [nghia3] just got created
+17:48:46 Bad Request: /api/logout-user/
+17:48:46 Account [nghia3] has enter the network
+17:48:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" (scheduled at 2024-11-12 17:48:54.074127+00:00)
+17:48:54 Marked 0 peers as inactive.
+17:48:54 currently have 0 peers inactive.
+17:48:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" executed successfully
+17:48:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" (scheduled at 2024-11-12 17:48:54.264656+00:00)
+17:48:54 Marked 0 peers as inactive.
+17:48:54 currently have 0 peers inactive.
+17:48:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" executed successfully
+17:49:04 Account [nghia1] has left the swarm
+17:49:04 Account [nghia1] has left the network
+17:49:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" (scheduled at 2024-11-12 17:49:09.074127+00:00)
+17:49:09 Marked 0 peers as inactive.
+17:49:09 currently have 0 peers inactive.
+17:49:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" executed successfully
+17:49:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" (scheduled at 2024-11-12 17:49:09.264656+00:00)
+17:49:09 Marked 0 peers as inactive.
+17:49:09 currently have 0 peers inactive.
+17:49:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" executed successfully
+17:49:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" (scheduled at 2024-11-12 17:49:24.074127+00:00)
+17:49:24 Marked 0 peers as inactive.
+17:49:24 currently have 0 peers inactive.
+17:49:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" executed successfully
+17:49:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" (scheduled at 2024-11-12 17:49:24.264656+00:00)
+17:49:24 Marked 0 peers as inactive.
+17:49:24 currently have 0 peers inactive.
+17:49:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" executed successfully
+17:49:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" (scheduled at 2024-11-12 17:49:39.074127+00:00)
+17:49:39 Marked 0 peers as inactive.
+17:49:39 currently have 0 peers inactive.
+17:49:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" executed successfully
+17:49:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" (scheduled at 2024-11-12 17:49:39.264656+00:00)
+17:49:39 Marked 0 peers as inactive.
+17:49:39 currently have 0 peers inactive.
+17:49:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" executed successfully
+17:49:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" (scheduled at 2024-11-12 17:49:54.074127+00:00)
+17:49:54 Marked 0 peers as inactive.
+17:49:54 currently have 0 peers inactive.
+17:49:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" executed successfully
+17:49:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" (scheduled at 2024-11-12 17:49:54.264656+00:00)
+17:49:54 Marked 0 peers as inactive.
+17:49:54 currently have 0 peers inactive.
+17:49:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" executed successfully
+17:50:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" (scheduled at 2024-11-12 17:50:09.074127+00:00)
+17:50:09 Marked 0 peers as inactive.
+17:50:09 currently have 0 peers inactive.
+17:50:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" executed successfully
+17:50:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" (scheduled at 2024-11-12 17:50:09.264656+00:00)
+17:50:09 Marked 0 peers as inactive.
+17:50:09 currently have 0 peers inactive.
+17:50:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" executed successfully
+17:50:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" (scheduled at 2024-11-12 17:50:24.074127+00:00)
+17:50:24 Marked 0 peers as inactive.
+17:50:24 currently have 0 peers inactive.
+17:50:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" executed successfully
+17:50:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" (scheduled at 2024-11-12 17:50:24.264656+00:00)
+17:50:24 Marked 0 peers as inactive.
+17:50:24 currently have 0 peers inactive.
+17:50:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" executed successfully
+17:50:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" (scheduled at 2024-11-12 17:50:39.074127+00:00)
+17:50:39 Marked 0 peers as inactive.
+17:50:39 currently have 0 peers inactive.
+17:50:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" executed successfully
+17:50:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" (scheduled at 2024-11-12 17:50:39.264656+00:00)
+17:50:39 Marked 0 peers as inactive.
+17:50:39 currently have 0 peers inactive.
+17:50:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" executed successfully
+17:50:39 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+17:50:39 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+17:50:39 Added job "check_inactive_peers" to job store "default"
+17:50:39 Scheduler started
+17:50:39 Watching for file changes with StatReloader
+17:50:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:09 UTC)" (scheduled at 2024-11-12 17:50:54.074127+00:00)
+17:50:54 Marked 1 peers as inactive.
+17:50:54 currently have 1 peers inactive.
+17:50:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:09 UTC)" executed successfully
+17:50:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" (scheduled at 2024-11-12 17:50:54.858196+00:00)
+17:50:54 Marked 0 peers as inactive.
+17:50:54 currently have 0 peers inactive.
+17:50:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:09 UTC)" executed successfully
+17:51:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" (scheduled at 2024-11-12 17:51:09.074127+00:00)
+17:51:09 Marked 0 peers as inactive.
+17:51:09 currently have 0 peers inactive.
+17:51:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" executed successfully
+17:51:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" (scheduled at 2024-11-12 17:51:09.858196+00:00)
+17:51:09 Marked 0 peers as inactive.
+17:51:09 currently have 0 peers inactive.
+17:51:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" executed successfully
+17:51:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" (scheduled at 2024-11-12 17:51:24.074127+00:00)
+17:51:24 Marked 0 peers as inactive.
+17:51:24 currently have 0 peers inactive.
+17:51:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" executed successfully
+17:51:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" (scheduled at 2024-11-12 17:51:24.858196+00:00)
+17:51:24 Marked 0 peers as inactive.
+17:51:24 currently have 0 peers inactive.
+17:51:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" executed successfully
+17:51:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" (scheduled at 2024-11-12 17:51:39.074127+00:00)
+17:51:39 Marked 0 peers as inactive.
+17:51:39 currently have 0 peers inactive.
+17:51:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" executed successfully
+17:51:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" (scheduled at 2024-11-12 17:51:39.858196+00:00)
+17:51:39 Marked 0 peers as inactive.
+17:51:39 currently have 0 peers inactive.
+17:51:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" executed successfully
+17:51:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" (scheduled at 2024-11-12 17:51:54.074127+00:00)
+17:51:54 Marked 0 peers as inactive.
+17:51:54 currently have 0 peers inactive.
+17:51:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" executed successfully
+17:51:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" (scheduled at 2024-11-12 17:51:54.858196+00:00)
+17:51:54 Marked 0 peers as inactive.
+17:51:54 currently have 0 peers inactive.
+17:51:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" executed successfully
+17:52:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" (scheduled at 2024-11-12 17:52:09.074127+00:00)
+17:52:09 Marked 0 peers as inactive.
+17:52:09 currently have 0 peers inactive.
+17:52:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" executed successfully
+17:52:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" (scheduled at 2024-11-12 17:52:09.858196+00:00)
+17:52:09 Marked 0 peers as inactive.
+17:52:09 currently have 0 peers inactive.
+17:52:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" executed successfully
+17:52:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" (scheduled at 2024-11-12 17:52:24.074127+00:00)
+17:52:24 Marked 0 peers as inactive.
+17:52:24 currently have 0 peers inactive.
+17:52:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" executed successfully
+17:52:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" (scheduled at 2024-11-12 17:52:24.858196+00:00)
+17:52:24 Marked 0 peers as inactive.
+17:52:24 currently have 0 peers inactive.
+17:52:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" executed successfully
+17:52:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" (scheduled at 2024-11-12 17:52:39.074127+00:00)
+17:52:39 Marked 0 peers as inactive.
+17:52:39 currently have 0 peers inactive.
+17:52:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" executed successfully
+17:52:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" (scheduled at 2024-11-12 17:52:39.858196+00:00)
+17:52:39 Marked 0 peers as inactive.
+17:52:39 currently have 0 peers inactive.
+17:52:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" executed successfully
+17:52:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" (scheduled at 2024-11-12 17:52:54.074127+00:00)
+17:52:54 Marked 0 peers as inactive.
+17:52:54 currently have 0 peers inactive.
+17:52:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" executed successfully
+17:52:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" (scheduled at 2024-11-12 17:52:54.858196+00:00)
+17:52:54 Marked 0 peers as inactive.
+17:52:54 currently have 0 peers inactive.
+17:52:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" executed successfully
+17:53:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" (scheduled at 2024-11-12 17:53:09.074127+00:00)
+17:53:09 Marked 0 peers as inactive.
+17:53:09 currently have 0 peers inactive.
+17:53:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" executed successfully
+17:53:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" (scheduled at 2024-11-12 17:53:09.858196+00:00)
+17:53:09 Marked 0 peers as inactive.
+17:53:09 currently have 0 peers inactive.
+17:53:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" executed successfully
+17:53:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" (scheduled at 2024-11-12 17:53:24.074127+00:00)
+17:53:24 Marked 0 peers as inactive.
+17:53:24 currently have 0 peers inactive.
+17:53:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" executed successfully
+17:53:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" (scheduled at 2024-11-12 17:53:24.858196+00:00)
+17:53:24 Marked 0 peers as inactive.
+17:53:24 currently have 0 peers inactive.
+17:53:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" executed successfully
+17:53:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" (scheduled at 2024-11-12 17:53:39.074127+00:00)
+17:53:39 Marked 0 peers as inactive.
+17:53:39 currently have 0 peers inactive.
+17:53:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" executed successfully
+17:53:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" (scheduled at 2024-11-12 17:53:39.858196+00:00)
+17:53:39 Marked 0 peers as inactive.
+17:53:39 currently have 0 peers inactive.
+17:53:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" executed successfully
+17:53:49 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/models.py changed, reloading.
+17:53:49 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+17:53:49 Added job "check_inactive_peers" to job store "default"
+17:53:49 Scheduler started
+17:53:49 Watching for file changes with StatReloader
+17:53:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:09 UTC)" (scheduled at 2024-11-12 17:53:54.074127+00:00)
+17:53:54 Marked 0 peers as inactive.
+17:53:54 currently have 0 peers inactive.
+17:53:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:09 UTC)" executed successfully
+17:54:04 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:19 UTC)" (scheduled at 2024-11-12 17:54:04.604860+00:00)
+17:54:04 Marked 0 peers as inactive.
+17:54:04 currently have 0 peers inactive.
+17:54:04 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:19 UTC)" executed successfully
+17:54:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:24 UTC)" (scheduled at 2024-11-12 17:54:09.074127+00:00)
+17:54:09 Marked 0 peers as inactive.
+17:54:09 currently have 0 peers inactive.
+17:54:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:24 UTC)" executed successfully
+17:54:19 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:34 UTC)" (scheduled at 2024-11-12 17:54:19.604860+00:00)
+17:54:19 Marked 0 peers as inactive.
+17:54:19 currently have 0 peers inactive.
+17:54:19 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:34 UTC)" executed successfully
+17:54:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:39 UTC)" (scheduled at 2024-11-12 17:54:24.074127+00:00)
+17:54:24 Marked 0 peers as inactive.
+17:54:24 currently have 0 peers inactive.
+17:54:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:39 UTC)" executed successfully
