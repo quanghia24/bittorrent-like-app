@@ -1,0 +1,195 @@
+04:11:48 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:14:10 Account [nghia1] has left the network
+04:14:19 Account [nghia1] has enter the network
+04:14:26 Internal Server Error: /api/add-filename/
+Traceback (most recent call last):
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py", line 91, in add_filenames
+    peer.add_filename(filenames)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'add_filename'
+04:16:39 Account named [nghia1] just got created
+04:16:46 Account [nghia1] has enter the network
+04:16:55 Not Found: /api/logout-user/
+04:18:57 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
+04:19:34 Account [nghia1] has enter the network
+04:19:38 Not Found: /api/logout-user/
+04:21:09 Account [nghia1] has enter the network
+04:21:11 Not Found: /api/logout-user/
+04:22:14 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
+04:25:43 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:26:02 Account [nghia1] has enter the network
+04:26:56 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:27:48 Account [nghia1] has enter the network
+04:27:50 Account [nghia1] has left the swarm
+04:28:13 Account [nghia1] has enter the network
+04:28:28 Internal Server Error: /api/add-filename/
+Traceback (most recent call last):
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py", line 92, in add_filenames
+    peer.add_filename(filenames)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'add_filename'
+04:28:36 Internal Server Error: /api/add-filename/
+Traceback (most recent call last):
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/.env/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py", line 92, in add_filenames
+    peer.add_filename(filenames)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'add_filename'
+04:30:37 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:30:47 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:30:54 Account [nghia1] has published [hi]
+04:31:39 Account [nghia1] has published [node.torrent]
+04:36:09 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:36:27 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:36:44 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:36:59 Account [quanghia] has enter the network
+04:42:22 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:42:25 Account [quanghia] has left the swarm
+04:46:01 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
+04:46:38 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
+04:46:48 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:49:17 Account [nghia1] has enter the network
+04:49:54 Account [nghia1] has enter the network
+04:50:09 Account [nghia1] has published [hello hi]
+04:50:28 Account named [nghia2] just got created
+04:50:36 Account [nghia2] has enter the network
+04:50:44 Account [nghia2] has published [hi hello]
+04:51:05 Account named [nghia3] just got created
+04:51:12 Account [nghia3] has enter the network
+04:51:54 Account [nghia3] has left the swarm
+04:52:02 Account [nghia3] has enter the network
+04:52:11 Method Not Allowed: /api/get-peer-list/
+04:53:03 Account [nghia3] has left the swarm
+04:53:44 Account [nghia1] has enter the network
+04:53:45 Account [nghia1] has left the swarm
+04:53:45 Account [nghia1] has left the network
+04:54:18 Account [nghia2] has enter the network
+04:54:19 Account [nghia2] has left the swarm
+04:54:19 Account [nghia2] has left the network
+04:54:44 Account [nghia1] has enter the network
+04:54:47 Account [nghia1] has published [hello]
+04:55:07 Account [nghia2] has enter the network
+04:55:09 Account [nghia2] has published [hello hi]
+04:55:26 Account [nghia3] has enter the network
+04:55:53 Account [nghia3] has left the swarm
+04:56:03 Account [nghia3] has enter the network
+04:56:06 Method Not Allowed: /api/get-peer-list/
+04:57:09 Account [nghia3] has left the swarm
+04:57:18 Account [nghia3] has enter the network
+04:57:20 Method Not Allowed: /api/get-peer-list/
+04:57:49 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+04:57:51 Account [nghia3] has left the swarm
+04:57:59 Account [nghia3] has enter the network
+05:00:03 Account [nghia3] has left the swarm
+05:00:11 Account [nghia3] has enter the network
+05:00:47 Account [nghia3] has left the swarm
+05:00:57 Account [nghia3] has enter the network
+05:01:21 Account [nghia3] has left the swarm
+05:01:32 Account [nghia3] has enter the network
+05:02:10 Account [nghia3] has left the swarm
+05:02:19 Account [nghia3] has enter the network
+05:05:09 Account [nghia3] has left the swarm
+05:05:21 Account [nghia3] has enter the network
+05:07:06 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
+05:10:18 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+05:10:37 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/models.py changed, reloading.
+03:05:28 Not Found: /
+03:05:52 Account named [nghia4] just got created
+03:06:22 Unauthorized: /api/login-user/
+03:06:30 Account [nghia1] has enter the network
+03:06:38 Account [nghia1] has left the swarm
+03:06:55 Account [nghia1] has enter the network
+03:07:16 Account [nghia1] has published [hello.torrent hi.torrent]
+03:07:33 Account [nghia1] has left the swarm
+03:07:33 Account [nghia1] has left the network
+03:07:55 Account [nghia1] has enter the network
+03:08:25 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/urls.py changed, reloading.
+03:08:45 Account [nghia1] has published [hi hello world]
+03:08:46 Not Found: /favicon.ico
+03:09:21 Account [nghia2] has enter the network
+03:09:45 Account [nghia2] has published [hello]
+03:10:07 Account [nghia3] has enter the network
+03:10:57 Account [nghia2] has left the swarm
+03:10:57 Account [nghia2] has left the network
+03:11:14 Not Found: /favicon.ico
+03:11:51 Account [nghia2] has enter the network
+03:11:56 Account [nghia2] has published [hello hi]
+03:14:30 Account [nghia2] has left the swarm
+03:14:30 Account [nghia2] has left the network
+03:14:32 Account [nghia3] has left the swarm
+03:14:35 Account [nghia1] has left the swarm
+03:14:35 Account [nghia1] has left the network
