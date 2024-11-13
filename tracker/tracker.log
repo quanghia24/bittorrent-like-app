@@ -1,262 +1,157 @@
-17:46:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" (scheduled at 2024-11-12 17:46:54.074127+00:00)
-17:46:54 Marked 0 peers as inactive.
-17:46:54 currently have 0 peers inactive.
-17:46:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" executed successfully
-17:46:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" (scheduled at 2024-11-12 17:46:54.264656+00:00)
-17:46:54 Marked 0 peers as inactive.
-17:46:54 currently have 0 peers inactive.
-17:46:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:09 UTC)" executed successfully
-17:46:59 Account named [nghia2] just got created
-17:47:04 Bad Request: /api/logout-user/
-17:47:04 Account [nghia2] has enter the network
-17:47:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" (scheduled at 2024-11-12 17:47:09.074127+00:00)
-17:47:09 Marked 0 peers as inactive.
-17:47:09 currently have 0 peers inactive.
-17:47:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" executed successfully
-17:47:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" (scheduled at 2024-11-12 17:47:09.264656+00:00)
-17:47:09 Marked 0 peers as inactive.
-17:47:09 currently have 0 peers inactive.
-17:47:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:24 UTC)" executed successfully
-17:47:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" (scheduled at 2024-11-12 17:47:24.074127+00:00)
-17:47:24 Marked 0 peers as inactive.
-17:47:24 currently have 0 peers inactive.
-17:47:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" executed successfully
-17:47:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" (scheduled at 2024-11-12 17:47:24.264656+00:00)
-17:47:24 Marked 0 peers as inactive.
-17:47:24 currently have 0 peers inactive.
-17:47:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:39 UTC)" executed successfully
-17:47:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" (scheduled at 2024-11-12 17:47:39.074127+00:00)
-17:47:39 Marked 0 peers as inactive.
-17:47:39 currently have 0 peers inactive.
-17:47:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" executed successfully
-17:47:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" (scheduled at 2024-11-12 17:47:39.264656+00:00)
-17:47:39 Marked 0 peers as inactive.
-17:47:39 currently have 0 peers inactive.
-17:47:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:47:54 UTC)" executed successfully
-17:47:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" (scheduled at 2024-11-12 17:47:54.074127+00:00)
-17:47:54 Marked 0 peers as inactive.
-17:47:54 currently have 0 peers inactive.
-17:47:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" executed successfully
-17:47:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" (scheduled at 2024-11-12 17:47:54.264656+00:00)
-17:47:54 Marked 0 peers as inactive.
-17:47:54 currently have 0 peers inactive.
-17:47:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:09 UTC)" executed successfully
-17:48:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" (scheduled at 2024-11-12 17:48:09.074127+00:00)
-17:48:09 Marked 0 peers as inactive.
-17:48:09 currently have 0 peers inactive.
-17:48:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" executed successfully
-17:48:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" (scheduled at 2024-11-12 17:48:09.264656+00:00)
-17:48:09 Marked 0 peers as inactive.
-17:48:09 currently have 0 peers inactive.
-17:48:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:24 UTC)" executed successfully
-17:48:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" (scheduled at 2024-11-12 17:48:24.074127+00:00)
-17:48:24 Marked 0 peers as inactive.
-17:48:24 currently have 0 peers inactive.
-17:48:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" executed successfully
-17:48:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" (scheduled at 2024-11-12 17:48:24.264656+00:00)
-17:48:24 Marked 0 peers as inactive.
-17:48:24 currently have 0 peers inactive.
-17:48:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:39 UTC)" executed successfully
-17:48:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" (scheduled at 2024-11-12 17:48:39.074127+00:00)
-17:48:39 Marked 0 peers as inactive.
-17:48:39 currently have 0 peers inactive.
-17:48:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" executed successfully
-17:48:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" (scheduled at 2024-11-12 17:48:39.264656+00:00)
-17:48:39 Marked 0 peers as inactive.
-17:48:39 currently have 0 peers inactive.
-17:48:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:48:54 UTC)" executed successfully
-17:48:42 Account named [nghia3] just got created
-17:48:46 Bad Request: /api/logout-user/
-17:48:46 Account [nghia3] has enter the network
-17:48:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" (scheduled at 2024-11-12 17:48:54.074127+00:00)
-17:48:54 Marked 0 peers as inactive.
-17:48:54 currently have 0 peers inactive.
-17:48:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" executed successfully
-17:48:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" (scheduled at 2024-11-12 17:48:54.264656+00:00)
-17:48:54 Marked 0 peers as inactive.
-17:48:54 currently have 0 peers inactive.
-17:48:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:09 UTC)" executed successfully
-17:49:04 Account [nghia1] has left the swarm
-17:49:04 Account [nghia1] has left the network
-17:49:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" (scheduled at 2024-11-12 17:49:09.074127+00:00)
-17:49:09 Marked 0 peers as inactive.
-17:49:09 currently have 0 peers inactive.
-17:49:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" executed successfully
-17:49:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" (scheduled at 2024-11-12 17:49:09.264656+00:00)
-17:49:09 Marked 0 peers as inactive.
-17:49:09 currently have 0 peers inactive.
-17:49:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:24 UTC)" executed successfully
-17:49:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" (scheduled at 2024-11-12 17:49:24.074127+00:00)
-17:49:24 Marked 0 peers as inactive.
-17:49:24 currently have 0 peers inactive.
-17:49:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" executed successfully
-17:49:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" (scheduled at 2024-11-12 17:49:24.264656+00:00)
-17:49:24 Marked 0 peers as inactive.
-17:49:24 currently have 0 peers inactive.
-17:49:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:39 UTC)" executed successfully
-17:49:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" (scheduled at 2024-11-12 17:49:39.074127+00:00)
-17:49:39 Marked 0 peers as inactive.
-17:49:39 currently have 0 peers inactive.
-17:49:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" executed successfully
-17:49:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" (scheduled at 2024-11-12 17:49:39.264656+00:00)
-17:49:39 Marked 0 peers as inactive.
-17:49:39 currently have 0 peers inactive.
-17:49:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:49:54 UTC)" executed successfully
-17:49:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" (scheduled at 2024-11-12 17:49:54.074127+00:00)
-17:49:54 Marked 0 peers as inactive.
-17:49:54 currently have 0 peers inactive.
-17:49:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" executed successfully
-17:49:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" (scheduled at 2024-11-12 17:49:54.264656+00:00)
-17:49:54 Marked 0 peers as inactive.
-17:49:54 currently have 0 peers inactive.
-17:49:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:09 UTC)" executed successfully
-17:50:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" (scheduled at 2024-11-12 17:50:09.074127+00:00)
-17:50:09 Marked 0 peers as inactive.
-17:50:09 currently have 0 peers inactive.
-17:50:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" executed successfully
-17:50:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" (scheduled at 2024-11-12 17:50:09.264656+00:00)
-17:50:09 Marked 0 peers as inactive.
-17:50:09 currently have 0 peers inactive.
-17:50:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:24 UTC)" executed successfully
-17:50:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" (scheduled at 2024-11-12 17:50:24.074127+00:00)
-17:50:24 Marked 0 peers as inactive.
-17:50:24 currently have 0 peers inactive.
-17:50:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" executed successfully
-17:50:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" (scheduled at 2024-11-12 17:50:24.264656+00:00)
-17:50:24 Marked 0 peers as inactive.
-17:50:24 currently have 0 peers inactive.
-17:50:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:39 UTC)" executed successfully
-17:50:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" (scheduled at 2024-11-12 17:50:39.074127+00:00)
-17:50:39 Marked 0 peers as inactive.
-17:50:39 currently have 0 peers inactive.
-17:50:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" executed successfully
-17:50:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" (scheduled at 2024-11-12 17:50:39.264656+00:00)
-17:50:39 Marked 0 peers as inactive.
-17:50:39 currently have 0 peers inactive.
-17:50:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" executed successfully
-17:50:39 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
-17:50:39 Adding job tentatively -- it will be properly scheduled when the scheduler starts
-17:50:39 Added job "check_inactive_peers" to job store "default"
-17:50:39 Scheduler started
-17:50:39 Watching for file changes with StatReloader
-17:50:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:09 UTC)" (scheduled at 2024-11-12 17:50:54.074127+00:00)
-17:50:54 Marked 1 peers as inactive.
-17:50:54 currently have 1 peers inactive.
-17:50:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:09 UTC)" executed successfully
-17:50:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:50:54 UTC)" (scheduled at 2024-11-12 17:50:54.858196+00:00)
-17:50:54 Marked 0 peers as inactive.
-17:50:54 currently have 0 peers inactive.
-17:50:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:09 UTC)" executed successfully
-17:51:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" (scheduled at 2024-11-12 17:51:09.074127+00:00)
-17:51:09 Marked 0 peers as inactive.
-17:51:09 currently have 0 peers inactive.
-17:51:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" executed successfully
-17:51:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" (scheduled at 2024-11-12 17:51:09.858196+00:00)
-17:51:09 Marked 0 peers as inactive.
-17:51:09 currently have 0 peers inactive.
-17:51:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:24 UTC)" executed successfully
-17:51:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" (scheduled at 2024-11-12 17:51:24.074127+00:00)
-17:51:24 Marked 0 peers as inactive.
-17:51:24 currently have 0 peers inactive.
-17:51:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" executed successfully
-17:51:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" (scheduled at 2024-11-12 17:51:24.858196+00:00)
-17:51:24 Marked 0 peers as inactive.
-17:51:24 currently have 0 peers inactive.
-17:51:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:39 UTC)" executed successfully
-17:51:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" (scheduled at 2024-11-12 17:51:39.074127+00:00)
-17:51:39 Marked 0 peers as inactive.
-17:51:39 currently have 0 peers inactive.
-17:51:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" executed successfully
-17:51:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" (scheduled at 2024-11-12 17:51:39.858196+00:00)
-17:51:39 Marked 0 peers as inactive.
-17:51:39 currently have 0 peers inactive.
-17:51:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:51:54 UTC)" executed successfully
-17:51:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" (scheduled at 2024-11-12 17:51:54.074127+00:00)
-17:51:54 Marked 0 peers as inactive.
-17:51:54 currently have 0 peers inactive.
-17:51:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" executed successfully
-17:51:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" (scheduled at 2024-11-12 17:51:54.858196+00:00)
-17:51:54 Marked 0 peers as inactive.
-17:51:54 currently have 0 peers inactive.
-17:51:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:09 UTC)" executed successfully
-17:52:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" (scheduled at 2024-11-12 17:52:09.074127+00:00)
-17:52:09 Marked 0 peers as inactive.
-17:52:09 currently have 0 peers inactive.
-17:52:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" executed successfully
-17:52:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" (scheduled at 2024-11-12 17:52:09.858196+00:00)
-17:52:09 Marked 0 peers as inactive.
-17:52:09 currently have 0 peers inactive.
-17:52:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:24 UTC)" executed successfully
-17:52:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" (scheduled at 2024-11-12 17:52:24.074127+00:00)
-17:52:24 Marked 0 peers as inactive.
-17:52:24 currently have 0 peers inactive.
-17:52:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" executed successfully
-17:52:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" (scheduled at 2024-11-12 17:52:24.858196+00:00)
-17:52:24 Marked 0 peers as inactive.
-17:52:24 currently have 0 peers inactive.
-17:52:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:39 UTC)" executed successfully
-17:52:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" (scheduled at 2024-11-12 17:52:39.074127+00:00)
-17:52:39 Marked 0 peers as inactive.
-17:52:39 currently have 0 peers inactive.
-17:52:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" executed successfully
-17:52:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" (scheduled at 2024-11-12 17:52:39.858196+00:00)
-17:52:39 Marked 0 peers as inactive.
-17:52:39 currently have 0 peers inactive.
-17:52:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:52:54 UTC)" executed successfully
-17:52:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" (scheduled at 2024-11-12 17:52:54.074127+00:00)
-17:52:54 Marked 0 peers as inactive.
-17:52:54 currently have 0 peers inactive.
-17:52:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" executed successfully
-17:52:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" (scheduled at 2024-11-12 17:52:54.858196+00:00)
-17:52:54 Marked 0 peers as inactive.
-17:52:54 currently have 0 peers inactive.
-17:52:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:09 UTC)" executed successfully
-17:53:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" (scheduled at 2024-11-12 17:53:09.074127+00:00)
-17:53:09 Marked 0 peers as inactive.
-17:53:09 currently have 0 peers inactive.
-17:53:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" executed successfully
-17:53:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" (scheduled at 2024-11-12 17:53:09.858196+00:00)
-17:53:09 Marked 0 peers as inactive.
-17:53:09 currently have 0 peers inactive.
-17:53:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:24 UTC)" executed successfully
-17:53:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" (scheduled at 2024-11-12 17:53:24.074127+00:00)
-17:53:24 Marked 0 peers as inactive.
-17:53:24 currently have 0 peers inactive.
-17:53:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" executed successfully
-17:53:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" (scheduled at 2024-11-12 17:53:24.858196+00:00)
-17:53:24 Marked 0 peers as inactive.
-17:53:24 currently have 0 peers inactive.
-17:53:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:39 UTC)" executed successfully
-17:53:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" (scheduled at 2024-11-12 17:53:39.074127+00:00)
-17:53:39 Marked 0 peers as inactive.
-17:53:39 currently have 0 peers inactive.
-17:53:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" executed successfully
-17:53:39 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" (scheduled at 2024-11-12 17:53:39.858196+00:00)
-17:53:39 Marked 0 peers as inactive.
-17:53:39 currently have 0 peers inactive.
-17:53:39 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:53:54 UTC)" executed successfully
-17:53:49 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/models.py changed, reloading.
-17:53:49 Adding job tentatively -- it will be properly scheduled when the scheduler starts
-17:53:49 Added job "check_inactive_peers" to job store "default"
-17:53:49 Scheduler started
-17:53:49 Watching for file changes with StatReloader
-17:53:54 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:09 UTC)" (scheduled at 2024-11-12 17:53:54.074127+00:00)
-17:53:54 Marked 0 peers as inactive.
-17:53:54 currently have 0 peers inactive.
-17:53:54 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:09 UTC)" executed successfully
-17:54:04 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:19 UTC)" (scheduled at 2024-11-12 17:54:04.604860+00:00)
-17:54:04 Marked 0 peers as inactive.
-17:54:04 currently have 0 peers inactive.
-17:54:04 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:19 UTC)" executed successfully
-17:54:09 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:24 UTC)" (scheduled at 2024-11-12 17:54:09.074127+00:00)
-17:54:09 Marked 0 peers as inactive.
-17:54:09 currently have 0 peers inactive.
-17:54:09 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:24 UTC)" executed successfully
-17:54:19 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:34 UTC)" (scheduled at 2024-11-12 17:54:19.604860+00:00)
-17:54:19 Marked 0 peers as inactive.
-17:54:19 currently have 0 peers inactive.
-17:54:19 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:34 UTC)" executed successfully
-17:54:24 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:39 UTC)" (scheduled at 2024-11-12 17:54:24.074127+00:00)
-17:54:24 Marked 0 peers as inactive.
-17:54:24 currently have 0 peers inactive.
-17:54:24 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-12 17:54:39 UTC)" executed successfully
+01:55:10 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:25 UTC)" (scheduled at 2024-11-13 01:55:10.165460+00:00)
+01:55:10 Marked 0 peers as inactive.
+01:55:10 currently have 0 peers inactive.
+01:55:10 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:25 UTC)" executed successfully
+01:55:10 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:25 UTC)" (scheduled at 2024-11-13 01:55:10.367276+00:00)
+01:55:10 Marked 0 peers as inactive.
+01:55:10 currently have 0 peers inactive.
+01:55:10 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:25 UTC)" executed successfully
+01:55:25 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:40 UTC)" (scheduled at 2024-11-13 01:55:25.165460+00:00)
+01:55:25 Marked 0 peers as inactive.
+01:55:25 currently have 0 peers inactive.
+01:55:25 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:40 UTC)" executed successfully
+01:55:25 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:40 UTC)" (scheduled at 2024-11-13 01:55:25.367276+00:00)
+01:55:25 Marked 0 peers as inactive.
+01:55:25 currently have 0 peers inactive.
+01:55:25 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:40 UTC)" executed successfully
+01:55:40 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:55 UTC)" (scheduled at 2024-11-13 01:55:40.165460+00:00)
+01:55:40 Marked 0 peers as inactive.
+01:55:40 currently have 0 peers inactive.
+01:55:40 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:55 UTC)" executed successfully
+01:55:40 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:55 UTC)" (scheduled at 2024-11-13 01:55:40.367276+00:00)
+01:55:40 Marked 0 peers as inactive.
+01:55:40 currently have 0 peers inactive.
+01:55:40 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:55:55 UTC)" executed successfully
+01:55:55 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:10 UTC)" (scheduled at 2024-11-13 01:55:55.165460+00:00)
+01:55:55 Marked 0 peers as inactive.
+01:55:55 currently have 0 peers inactive.
+01:55:55 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:10 UTC)" executed successfully
+01:55:55 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:10 UTC)" (scheduled at 2024-11-13 01:55:55.367276+00:00)
+01:55:55 Marked 0 peers as inactive.
+01:55:55 currently have 0 peers inactive.
+01:55:55 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:10 UTC)" executed successfully
+01:56:10 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:25 UTC)" (scheduled at 2024-11-13 01:56:10.165460+00:00)
+01:56:10 Marked 0 peers as inactive.
+01:56:10 currently have 0 peers inactive.
+01:56:10 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:25 UTC)" executed successfully
+01:56:10 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:25 UTC)" (scheduled at 2024-11-13 01:56:10.367276+00:00)
+01:56:10 Marked 0 peers as inactive.
+01:56:10 currently have 0 peers inactive.
+01:56:10 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:25 UTC)" executed successfully
+01:56:11 /home/quanghia/unidata/myProjects/uniProject/secondChanceNetwork/tracker/api/views.py changed, reloading.
+01:56:12 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+01:56:12 Added job "check_inactive_peers" to job store "default"
+01:56:12 Scheduler started
+01:56:12 Watching for file changes with StatReloader
+01:56:25 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:40 UTC)" (scheduled at 2024-11-13 01:56:25.165460+00:00)
+01:56:25 Marked 0 peers as inactive.
+01:56:25 currently have 0 peers inactive.
+01:56:25 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:40 UTC)" executed successfully
+01:56:27 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:42 UTC)" (scheduled at 2024-11-13 01:56:27.084152+00:00)
+01:56:27 Marked 0 peers as inactive.
+01:56:27 currently have 0 peers inactive.
+01:56:27 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:42 UTC)" executed successfully
+01:56:40 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:55 UTC)" (scheduled at 2024-11-13 01:56:40.165460+00:00)
+01:56:40 Marked 0 peers as inactive.
+01:56:40 currently have 0 peers inactive.
+01:56:40 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:55 UTC)" executed successfully
+01:56:42 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:57 UTC)" (scheduled at 2024-11-13 01:56:42.084152+00:00)
+01:56:42 Marked 0 peers as inactive.
+01:56:42 currently have 0 peers inactive.
+01:56:42 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:56:57 UTC)" executed successfully
+01:56:55 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:10 UTC)" (scheduled at 2024-11-13 01:56:55.165460+00:00)
+01:56:55 Marked 0 peers as inactive.
+01:56:55 currently have 0 peers inactive.
+01:56:55 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:10 UTC)" executed successfully
+01:56:57 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:12 UTC)" (scheduled at 2024-11-13 01:56:57.084152+00:00)
+01:56:57 Marked 0 peers as inactive.
+01:56:57 currently have 0 peers inactive.
+01:56:57 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:12 UTC)" executed successfully
+01:57:10 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:25 UTC)" (scheduled at 2024-11-13 01:57:10.165460+00:00)
+01:57:10 Marked 0 peers as inactive.
+01:57:10 currently have 0 peers inactive.
+01:57:10 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:25 UTC)" executed successfully
+01:57:12 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:27 UTC)" (scheduled at 2024-11-13 01:57:12.084152+00:00)
+01:57:12 Marked 0 peers as inactive.
+01:57:12 currently have 0 peers inactive.
+01:57:12 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:27 UTC)" executed successfully
+01:57:25 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:40 UTC)" (scheduled at 2024-11-13 01:57:25.165460+00:00)
+01:57:25 Marked 0 peers as inactive.
+01:57:25 currently have 0 peers inactive.
+01:57:25 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:40 UTC)" executed successfully
+01:57:27 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:42 UTC)" (scheduled at 2024-11-13 01:57:27.084152+00:00)
+01:57:27 Marked 0 peers as inactive.
+01:57:27 currently have 0 peers inactive.
+01:57:27 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:42 UTC)" executed successfully
+01:57:40 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:55 UTC)" (scheduled at 2024-11-13 01:57:40.165460+00:00)
+01:57:40 Marked 0 peers as inactive.
+01:57:40 currently have 0 peers inactive.
+01:57:40 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:55 UTC)" executed successfully
+01:57:42 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:57 UTC)" (scheduled at 2024-11-13 01:57:42.084152+00:00)
+01:57:42 Marked 0 peers as inactive.
+01:57:42 currently have 0 peers inactive.
+01:57:42 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:57:57 UTC)" executed successfully
+01:57:55 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:10 UTC)" (scheduled at 2024-11-13 01:57:55.165460+00:00)
+01:57:55 Marked 0 peers as inactive.
+01:57:55 currently have 0 peers inactive.
+01:57:55 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:10 UTC)" executed successfully
+01:57:57 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:12 UTC)" (scheduled at 2024-11-13 01:57:57.084152+00:00)
+01:57:57 Marked 0 peers as inactive.
+01:57:57 currently have 0 peers inactive.
+01:57:57 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:12 UTC)" executed successfully
+01:58:10 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:25 UTC)" (scheduled at 2024-11-13 01:58:10.165460+00:00)
+01:58:10 Marked 0 peers as inactive.
+01:58:10 currently have 0 peers inactive.
+01:58:10 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:25 UTC)" executed successfully
+01:58:12 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:27 UTC)" (scheduled at 2024-11-13 01:58:12.084152+00:00)
+01:58:12 Marked 0 peers as inactive.
+01:58:12 currently have 0 peers inactive.
+01:58:12 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:27 UTC)" executed successfully
+01:58:25 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:40 UTC)" (scheduled at 2024-11-13 01:58:25.165460+00:00)
+01:58:25 Marked 0 peers as inactive.
+01:58:25 currently have 0 peers inactive.
+01:58:25 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:40 UTC)" executed successfully
+01:58:27 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:42 UTC)" (scheduled at 2024-11-13 01:58:27.084152+00:00)
+01:58:27 Marked 0 peers as inactive.
+01:58:27 currently have 0 peers inactive.
+01:58:27 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:42 UTC)" executed successfully
+01:58:40 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:55 UTC)" (scheduled at 2024-11-13 01:58:40.165460+00:00)
+01:58:40 Marked 0 peers as inactive.
+01:58:40 currently have 0 peers inactive.
+01:58:40 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:55 UTC)" executed successfully
+01:58:42 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:57 UTC)" (scheduled at 2024-11-13 01:58:42.084152+00:00)
+01:58:42 Marked 0 peers as inactive.
+01:58:42 currently have 0 peers inactive.
+01:58:42 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:58:57 UTC)" executed successfully
+01:58:55 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:10 UTC)" (scheduled at 2024-11-13 01:58:55.165460+00:00)
+01:58:55 Marked 0 peers as inactive.
+01:58:55 currently have 0 peers inactive.
+01:58:55 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:10 UTC)" executed successfully
+01:58:57 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:12 UTC)" (scheduled at 2024-11-13 01:58:57.084152+00:00)
+01:58:57 Marked 0 peers as inactive.
+01:58:57 currently have 0 peers inactive.
+01:58:57 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:12 UTC)" executed successfully
+01:59:10 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:25 UTC)" (scheduled at 2024-11-13 01:59:10.165460+00:00)
+01:59:10 Marked 0 peers as inactive.
+01:59:10 currently have 0 peers inactive.
+01:59:10 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:25 UTC)" executed successfully
+01:59:12 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:27 UTC)" (scheduled at 2024-11-13 01:59:12.084152+00:00)
+01:59:12 Marked 0 peers as inactive.
+01:59:12 currently have 0 peers inactive.
+01:59:12 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:27 UTC)" executed successfully
+01:59:25 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:40 UTC)" (scheduled at 2024-11-13 01:59:25.165460+00:00)
+01:59:25 Marked 0 peers as inactive.
+01:59:25 currently have 0 peers inactive.
+01:59:25 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:40 UTC)" executed successfully
+01:59:27 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:42 UTC)" (scheduled at 2024-11-13 01:59:27.084152+00:00)
+01:59:27 Marked 0 peers as inactive.
+01:59:27 currently have 0 peers inactive.
+01:59:27 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:42 UTC)" executed successfully
+01:59:40 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:55 UTC)" (scheduled at 2024-11-13 01:59:40.165460+00:00)
+01:59:40 Marked 0 peers as inactive.
+01:59:40 currently have 0 peers inactive.
+01:59:40 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:55 UTC)" executed successfully
+01:59:42 Running job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:57 UTC)" (scheduled at 2024-11-13 01:59:42.084152+00:00)
+01:59:42 Marked 0 peers as inactive.
+01:59:42 currently have 0 peers inactive.
+01:59:42 Job "check_inactive_peers (trigger: interval[0:00:15], next run at: 2024-11-13 01:59:57 UTC)" executed successfully

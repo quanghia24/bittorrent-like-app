@@ -8,6 +8,7 @@ import time
 
 
 class Node:
+
     def __init__(self, port):
         self.username = ''
         self.islogin = False
@@ -185,6 +186,45 @@ def keep_alive():
         else:
             print("failed to send heartbeat")
         time.sleep(15)
+
+def upload_torrent():
+    file_name = torrent_entry.get()
+    if not file_name.endswith('.torrent'):
+        file_name += '.torrent'
+
+    # file_name = "SE_file.torrent"
+    parser = TorrentParser(file_name)
+    parser_metadata = parser.get_metadata()
+
+    filenames = [file['path'] for file in parser_metadata['files']]
+    for f in filenames:
+        update_response(f)
+        
+    update_response("-----------------")
+    update_response("Filenames")
+
+    print("parser_metadata----------------->",parser_metadata)
+    update_response(f"total_size {parser_metadata['total_size']}")
+    update_response(f"piece_count {parser_metadata['piece_count']}")
+    update_response(f"piece_length {parser_metadata['piece_length']}")
+    update_response(f"tracker_url {parser_metadata['tracker_url']}")
+    update_response(f"info_hash {parser_metadata['info_hash']}")
+    update_response("File Info")
+    update_response("---------------")
+
+    threads = []
+    for filename in filenames:
+        thread = threading.Thread(target=node.set_send_mode, args=(filename,parser_metadata))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join() 
+
+
+
+
+    update_response(f"Uploading {file_name}")
+
 
 if __name__ == "__main__":
     myport = int(input("Port: "))

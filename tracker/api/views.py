@@ -151,7 +151,6 @@ def add_filenames(request):
     logger.info(f"Account [{username}] has published", info_hash) 
     return Response({"message": "Torrent added successfully", "filenames": peer.get_torrents()}, status=status.HTTP_200_OK)
 
-
 @api_view(['POST'])
 def update_freq(request):
     username = request.data.get('username')
