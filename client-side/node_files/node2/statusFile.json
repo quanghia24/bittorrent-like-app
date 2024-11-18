@@ -1,0 +1,17 @@
+{
+    "1": {
+        "filename": "file_B.txt",
+        "bitfield_pieces": [
+            0,
+            1
+        ],
+        "pieces_count": 2
+    },
+    "2": {
+        "filename": "file_C.txt",
+        "bitfield_pieces": [
+            0
+        ],
+        "pieces_count": 1
+    }
+}

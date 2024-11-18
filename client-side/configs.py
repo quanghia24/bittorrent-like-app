@@ -10,8 +10,8 @@ CFG = {
     "constants": {
         "AVAILABLE_PORTS_RANGE": (1024, 65535), # range of available ports on the local computer
         "TRACKER_ADDR": ("127.0.0.1", 12345),
-        "MAX_TCP_SEGMENT_DATA_SIZE": 520000,
-        "BUFFER_SIZE":520000,        # MACOSX UDP MTU is 9216
+        "MAX_TCP_SEGMENT_DATA_SIZE": 530000,
+        "BUFFER_SIZE":530000,        # MACOSX UDP MTU is 9216
         "CHUNK_PIECES_SIZE": 9216 - 2000, # Each chunk pieces(segments of UDP) must be lower than UDP buffer size
         "MAX_SPLITTNES_RATE": 5,    # number of neighboring peers which the node take chunks of a file in parallel
         "NODE_TIME_INTERVAL": 20,        # the interval time that each node periodically informs the tracker (in seconds)

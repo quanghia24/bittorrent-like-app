@@ -56,13 +56,25 @@ def announce(request):
 def get_peers(request):
     info_hash = request.data.get("info_hash")
     torrents = Torrent.objects.filter(info_hash=info_hash)
-    peers = [{torrent.peer.address} for torrent in torrents]
-    return Response({"peers": list(peers)})
+    file_owners = []
+    for torrent in torrents:
+        torrent.peer.user.update_freq()
+        data = {
+            "node_id": torrent.peer.node_id,
+            "addr": [
+                torrent.peer.address.removeprefix("http://").split(":")[0],  # Extract IP
+                int(torrent.peer.address.removeprefix("http://").split(":")[1])  # Extract and convert port to int
+            ],
+        }
+        file_owners.append((data, torrent.peer.user.freq))
+
+    return Response({"peers": file_owners})
 
 @api_view(['POST'])
 def create_user(request):
     username = request.data.get("username")
     password = request.data.get("password")
+
 
     if not username or not password:
         return Response({"error": "Username and password are required"}, status=status.HTTP_400_BAD_REQUEST)
@@ -120,6 +132,7 @@ def add_filenames(request):
     name = request.data.get("name")
     piece_length = request.data.get("piece_length")
     filenames = request.data.get("filenames")
+    node_id = request.data.get("node_id")
 
 
     if not all([username, address, name, info_hash, piece_length, filenames]):
@@ -132,7 +145,7 @@ def add_filenames(request):
         return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
 
     # Check if a peer exists for the user, if not, create one
-    peer, created = Peer.objects.get_or_create(user=user, address=address)
+    peer, created = Peer.objects.get_or_create(user=user, address=address, node_id=node_id)
     peer.add_torrent(info_hash)
     
     # add torrent information
@@ -164,21 +177,6 @@ def update_freq(request):
     logger.info(f"{username}'s upload frequency got increased by one, [{user.freq}]")
 
 
-# admin request, get all orders in the system
-@api_view(['GET'])
-def get_all_orders(request):
-    pass
 
-# user request, get all orders that user has placed
-@api_view(['POST'])
-def get_my_orders(request):
-    username = request.data.get('username')
-    pass
-
-# user request, create a new order
-@api_view(['POST'])
-def create_order(request):
-    username = request.data.get('username')
-    pass
 
 

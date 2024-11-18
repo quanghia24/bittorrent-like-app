@@ -40,7 +40,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         self.freq += 1
         self.save()
 
+    def __str__(self) -> str:
+        return f"{self.username} {self.freq}"
+
 class Peer(models.Model):
+    node_id = models.CharField(max_length=10, unique=True)
     address = models.CharField(max_length=25)
     user = models.OneToOneField(CustomUser, related_name="peer", on_delete=models.CASCADE)
     torrents = models.JSONField(default=list, blank=True)

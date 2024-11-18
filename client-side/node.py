@@ -40,17 +40,20 @@ update_bitfield =Lock()
 
 class Node:
 
-    def __init__(self, port):
+    def __init__(self, port, nid):
         self.username = ''
         self.islogin = False
         self.port = port
         self.hasTorrent = False
+        self.node_id = nid
+        self.node_ip = "127.0.0.1"
         # ------------
         self.send_socket = set_socket(port, "127.0.0.1")
         self.connection = False
         self.is_in_send_mode = False
         self.downloaded_files = {}
         self.shared_file_lock = Lock()
+        self.files = self.fetch_owned_files()
         self.swarm_lock =Lock()
 
     def send_segment(self, sock: socket.socket, data: bytes, addr: tuple):
@@ -107,7 +110,6 @@ class Node:
                 bitfield_pieces_count[piece] += 1
             else:
                 bitfield_pieces_count[piece] = 1
-    
     def rarest_pieces_first(self,bitfield_pieces_count):
         # check if bitfields are recieved else wait for some time
         while(len(bitfield_pieces_count) == 0):
@@ -167,7 +169,7 @@ class Node:
 
         # successfully downloaded and validated block of piece
         return response_message.block
-    def download_piece(self,piece_index,peer_index,piece_length,bitfield_pieces_count, filename, file_path,file_size,to_be_used_owners:list):
+    def download_piece(self, piece_index, peer_index, piece_length, bitfield_pieces_count, filename, file_path, file_size, to_be_used_owners:list):
         # if not self.have_piece(piece_index,peer_index) or not self.download_possible():
         #     return False
         max_block_length = 16 * (2**10)
@@ -186,6 +188,8 @@ class Node:
             t_piece_length = piece_length
         else:
             t_piece_length = file_size - piece_index * piece_length
+
+        
         # loop untill you download all the blocks in the piece
         while block_offset < t_piece_length:
             # find out how much max length of block that can be requested
@@ -195,15 +199,18 @@ class Node:
                 block_length = t_piece_length - block_offset
             range = (piece_index, block_offset, block_length)
             block_data = self.receive_chunk(filename, range ,peer_index,bitfield_pieces_count,file_path, piece_length,to_be_used_owners)
+
             if block_data:
                 # increament offset according to size of data block recieved
                 recieved_piece += block_data
                 block_offset   += block_length
+
             elif block_data == -1: 
                 noConnection = True
                 return
             else:
                 noChunk= True
+        
         if noConnection:
             if peer_index in to_be_used_owners:
                 self.swarm_lock.acquire()
@@ -219,6 +226,7 @@ class Node:
         del bitfield_pieces_count[piece_index]
         self.downloaded_files[filename].append(piece_index)
         self.swarm_lock.release()
+
         return 
 
         
@@ -359,10 +367,15 @@ class Node:
                 msg = Message.decode(data)
                 # print("msg::::",msg)
                 self.handle_requests(msg=msg, addr=peer_address,peer_socket = peer_socket)
+    def set_send_mode(self, filename): 
+        print(f"set_send_mode received {filename}")
 
-    def set_send_mode(self, filename: str, parser_metadata: object): 
+        print(self.files)
+        print("-------------")
         isInfiles =False
         for file in self.files:
+
+            print(file["filename"])
             if filename == file["filename"]:
                 isInfiles = True
 
@@ -371,33 +384,7 @@ class Node:
                 content=f"You don't have {filename}")
             return
         
-        bitfield_set = set([])
-        pieces_length = 29
-        for i in range(pieces_length):
-            bitfield_set.add(i)
-        # print(bitfield_set)
-        bitfield_pieces = self.create_bitfield_message(bitfield_set, pieces_length)
-        
-        targetFile = {
-            "file_name": filename,
-            "bitfield_pieces": bitfield_pieces,
-            "pieces_length": pieces_length
-        }
-        print("targetFile-------->",targetFile)
-        tracker_url = parser_metadata["tracker_url"] + "/announce"
-        params = {
-            'info_hash': parser_metadata["info_hash"],
-            'fileName': filename,
-            'peer_id': str(self.node_id),
-            'port': self.port,
-            'uploaded': 0,
-            'downloaded': 0,
-            'left': parser_metadata["total_size"],
-            'event': 'started',
-            "piece_length": parser_metadata["piece_length"],
-        }
-        print(f"{tracker_url}?{params}")
-        response = requests.get(tracker_url, params=params)
+        response = self.publish(filename)
 
         if response.status_code == 200:
             log_content = f"Tracker response: {response.json()}"
@@ -622,13 +609,16 @@ class Node:
         # sẽ ghi lại vào file status tình trạng khi mà đã tải file
         print("download_files------------------------->",self.downloaded_files[filename])     
         # chuyen sang bitfield roif chuyen sang hex ghi vaof laij file status
-        # Byte_bitfield = self.create_bitfield_message(self.downloaded_files[filename], pieces_count)
+        Byte_bitfield = self.create_bitfield_message(self.downloaded_files[filename], pieces_count)
 
-        # node_files_path = config.directory.node_files_dir + 'node' + str(self.node_id) + "/" + "statusFile.json"
+        node_files_path = config.directory.node_files_dir + 'node' + str(self.node_id) + "/" + "statusFile.json"
 
-        # self.add_entry_to_json(node_files_path,filename,Byte_bitfield.hex(),pieces_count)
+        self.add_entry_to_json(node_files_path, filename, self.downloaded_files[filename], pieces_count)
+
+        
         
         #  py node.py -node_id 1 -port 12345 -node_ip "127.0.0.1"
+
         # file_size = self.ask_file_size(filename=filename, file_owner=to_be_used_owners[0])
         # log_content = f"The file {filename} which you are about to download, has size of {file_size} bytes"
         # log(node_id=self.node_id, content=log_content)
@@ -639,9 +629,17 @@ class Node:
 
         log_content = f"{filename} has successfully downloaded and saved in my files directory."
         log(node_id=self.node_id, content=log_content)
-        self.files.append(filename)
 
-    def set_download_mode(self, filename: str, parser_metadata):
+        target_file = {
+            "fileId": random.randint(10, 150),
+            "filename": filename,
+            "bitfield_pieces": self.downloaded_files[filename], 
+            "pieces_count": pieces_count
+        }
+        self.files.append(target_file)
+
+
+    def set_download_mode(self, filename: str, peerList, metadata):
         file_path = f"{config.directory.node_files_dir}node{self.node_id}/{filename}"
         if os.path.isfile(file_path):
             log_content = f"You already have this file!"
@@ -650,52 +648,52 @@ class Node:
         else:
             log_content = f"You just started to download {filename}. Let's search it in torrent!"
             log(node_id=self.node_id, content=log_content)
-            # tracker_response = self.search_torrent(filename=filename)
-            # file_owners = tracker_response['search_result']
-            # client = TrackerClient(
-            #     id=self.node_id,
-            #     port=self.port,
-            #     info_hash_hex=parser_metadata['info_hash'],
-            #     total_length=parser_metadata['total_size'],
-            # )
 
-            # file_owners = client.get_peers(parser_metadata["tracker_url"])
-            tracker_url = parser_metadata["tracker_url"] + "/searchFiles"
-            params = {
-                'info_hash': parser_metadata["info_hash"],
-                'fileName': filename,
-                'peer_id': str(self.node_id),
-                'port': self.port,
-                'uploaded': 0,
-                'downloaded': 0,
-                'left': parser_metadata["total_size"],
-                'event': 'started',
-                "piece_length": parser_metadata["piece_length"],
-            }
-            print(f"{tracker_url}?{params}")
-            response = requests.get(tracker_url, params=params)
-            print(response.json())
-            if response.status_code == 200:
-                log_content = f"Tracker response: {response.json()}"
-                log(node_id=self.node_id, content=log_content)
-            else:
-                log_content = f"Tracker response: {response}"
-                log(node_id=self.node_id, content=log_content)
-                return
-            if not file_owners:
+
+            if not peerList:
                 log_content = f"Sorry, no one has {filename}!"
                 log(node_id=self.node_id, content=log_content)
                 return
-            print("file_owners------------------>",file_owners)
-            file_owners = [
-                ({"node_id": 1, 
-                 "addr": ["127.0.0.1", 12345],
-                },2),
-                ({"node_id": 2, 
-                 "addr": ["127.0.0.1", 12346],
-                },2)
-            ]
-            # self.split_file_owners(file_owners=file_owners, filename=filename, parser_metadata= parser_metadata)
+            print("peerList------------------>",peerList)
+
+            # file_owners = [
+            #     ({"node_id": 1, 
+            #      "addr": ["127.0.0.1", 12345],
+            #     },2),
+            #     ({"node_id": 2, 
+            #      "addr": ["127.0.0.1", 12346],
+            #     },2)
+            # ]
+
+            self.split_file_owners(file_owners=peerList, filename=filename, parser_metadata= metadata)
+
+
+    # def fetch_owned_files(self) -> list:
+    #     files = []
+    #     node_files_path = config.directory.node_files_dir + 'node' + str(self.node_id) + "/" + "statusFile.json"
+    #     with open(node_files_path, 'r') as file:
+    #         data = json.load(file)
+    #     for file_id, file_data in data.items():
+    #         filename = file_data['filename']
+    #         # Use `ast.literal_eval` to convert the byte string safely
+    #         bitfield_set = set([])
+    #         piece_count = file_data['pieces_count']
+    #         for i in range(piece_count):
+    #             bitfield_set.add(i)
+    #     # print(bitfield_set)
+    #         bitfield_pieces = self.create_bitfield_message(bitfield_set, piece_count)
+    #         # bitfield = byte_format = bytes.fromhex(bitfield_hex)
+    #         # pieces_count = file_data['pieces_count']
+    #         # Display the result
+    #         target_file = {
+    #             "fileId": file_id,
+    #             "filename": filename,
+    #             "bitfield_pieces":bitfield_pieces,
+    #             "pieces_count": piece_count
+    #         }
+    #         files.append(target_file)
+    #     print("specific_files::::",files)
+    #     return files
     def fetch_owned_files(self) -> list:
         files = []
         node_files_path = config.directory.node_files_dir + 'node' + str(self.node_id) + "/" + "statusFile.json"
@@ -704,25 +702,22 @@ class Node:
         for file_id, file_data in data.items():
             filename = file_data['filename']
             # Use `ast.literal_eval` to convert the byte string safely
-            bitfield_set = set([])
-            piece_count = file_data['pieces_count']
-            for i in range(piece_count):
-                bitfield_set.add(i)
-        # print(bitfield_set)
-            bitfield_pieces = self.create_bitfield_message(bitfield_set, piece_count)
+            bitfield_hex = file_data['bitfield_pieces'] 
+            pieces_count = file_data['pieces_count']
+            bitfield_hex_1= set(bitfield_hex)
+            traget_bitfield_hex_1= self.create_bitfield_message(bitfield_hex_1, pieces_count)
             # bitfield = byte_format = bytes.fromhex(bitfield_hex)
-            # pieces_count = file_data['pieces_count']
+           
             # Display the result
             target_file = {
                 "fileId": file_id,
                 "filename": filename,
-                "bitfield_pieces":bitfield_pieces,
-                "pieces_count": piece_count
+                "bitfield_pieces":traget_bitfield_hex_1,
+                "pieces_count": pieces_count
             }
             files.append(target_file)
         print("specific_files::::",files)
         return files
-
     # --------------- to tracker ---------------
     def create_user(self, username, password):
         # frontend <-> backend 
@@ -764,7 +759,7 @@ class Node:
             return True
         else:
             return False
-    def publish(self, file):
+    def publish(self, file): # torrent 
         self.hasTorrent = True
         url = "http://127.0.0.1:8000/api/add-filename/"
         addr = "http://127.0.0.1:" + str(self.port)
@@ -781,28 +776,28 @@ class Node:
             "name": file,
             "info_hash": metadata['info_hash'],
             "piece_length": metadata['piece_length'],
-            "filenames": metadata['files']
+            "filenames": metadata['files'],
+            "node_id": self.node_id
         }
-
-
         print(payload)
 
         response = requests.post(url, json=payload)
         print(response)
-        if response.status_code == 200:
-            print(response.json())
-            print("Added successful")
-            # open a port to listen for requests
-            for filename in filenames:
-                T = Thread(target=self.set_send_mode, args=(filename, ))
-                T.daemon = True
-                T.start()
-            print(f"{self.port} is listening")
+        return response
 
-            return True
-        else:
-            print("Failed to add filenames")
-            return False
+        # if response.status_code == 200:
+        #     print(response.json())
+        #     print("Added successful")
+        #     # open a port to listen for requests
+        #     for filename in filenames:
+        #         T = Thread(target=self.set_send_mode, args=(filename, ))
+        #         T.daemon = True
+        #         T.start()
+        #     print(f"{self.port} is listening")
+        #     return True
+        # else:
+        #     print("Failed to add filenames")
+        #     return False
         
     def fetch(self, filemames):
         url = "http://127.0.0.1:8000/api/get-peer-list/"
@@ -822,6 +817,7 @@ class Node:
         else:
             print("Failed to fetch peers")
             return []
+        
     def send_heartbeat(self):
         if self.hasTorrent == False:
             return False
@@ -862,16 +858,50 @@ def main_task():
 
                 case '3':
                     filenames = input("Enter files you wanted to publish: ")
-                    files = filenames.split()
-                    print("Your trying to add files", files)
-                    for file in files:
-                        myNode.publish(file)  
+                    filenames = filenames.split()
+                    print("Your trying to add files", filenames)
+                    threads = []
+                    for f in filenames:
+                        print(f"send {f}")
+                        thread = threading.Thread(target=myNode.set_send_mode, args=(f,))
+                        threads.append(thread)
+                        thread.start()
+                    for thread in threads:
+                        thread.join()
 
                 case '4':
                     filenames = input("Enter file you wanted to fetch: ")
                     peerList = myNode.fetch(filenames)
+                    peerList = list(map(tuple, peerList))
+                    print(peerList)
+
                     for p in peerList:
                         print(p)
+
+                    parser = TorrentParser(filepath=filenames)
+                    metadata = parser.get_metadata()
+
+                    files = [file['path'] for file in metadata['files']]
+
+                    threads = []
+                    for file in files:
+                        thread = threading.Thread(target=myNode.set_download_mode, args=(file, peerList, metadata,))
+                        threads.append(thread)
+                        thread.start()
+                    for thread in threads:
+                        thread.join()    
+                    
+                    node_files_path = config.directory.node_files_dir + 'node' + str(myNode.node_id) + "/" + "statusFile.json"
+                    myNode.add_entry_to_json(node_files_path, filenames, [], 0)
+                    target_file = {
+                        "fileId": random.randint(10,100),
+                        "filename": filenames,
+                        "bitfield_pieces": [],
+                        "pieces_count": 0
+                    }
+                    myNode.files.append(target_file)
+                    print("Hereeeeeeeeeeeeeeeee")
+                    print(myNode.files)
 
                 case '6':
                     print("You just updated your frequency")
@@ -887,10 +917,8 @@ def main_task():
 
 def keep_alive():
     while True:
-        print()
-        print(f"{myNode.username} was trying to stay alive")
-        # if myNode.send_heartbeat():
-        #     print("you have sent a heartbeat")
+        if myNode.send_heartbeat():
+            print("you have sent a heartbeat")
         # else:
         #     print("failed to send heartbeat")
         time.sleep(15)
@@ -925,7 +953,8 @@ def upload_torrent():
 
 if __name__ == "__main__":
     myport = int(input("Port: "))
-    myNode = Node(myport)
+    myid = int(input("Id: "))
+    myNode = Node(myport, myid)
 
     T = Thread(target=keep_alive)
     T.daemon = True
