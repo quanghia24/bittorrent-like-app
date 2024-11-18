@@ -125,6 +125,7 @@ class myGUI:
 next_call = time.time()
 FORMAT ="utf-8"
 update_bitfield =Lock()
+
 class Node:
     def __init__(self, node_id: int, port: int, node_ip: str):
         self.send_socket = set_socket(port, node_ip)
@@ -132,7 +133,7 @@ class Node:
         self.node_id = node_id
         self.node_ip = node_ip
         self.port = port
-        self.files = self.fetch_owned_files()
+        self.files = self.fetch_owned_files()   #---
         self.is_in_send_mode = False    # is thread uploading a file or not
         self.downloaded_files = {}
         self.shared_file_lock = Lock()
@@ -351,7 +352,6 @@ class Node:
         self.write(file_descriptor,data_block)
         # self.shared_file_lock.release()
 
-
     def send_chunk(self, filename: str, rng: tuple, dest_node_id: int, dest_port: int,peer_socket, piece_length: int):
         file_path = f"{config.directory.node_files_dir}node{self.node_id}/{filename}"
         file_descriptor = os.open(file_path, os.O_RDWR | os.O_CREAT) 
@@ -438,9 +438,6 @@ class Node:
         #                        filename="")
         #     peer_socket.sendall(Message.encode(msg))
     
-            
-       
-
     def listen(self):
         self.send_socket.bind((self.node_ip,self.port))
         self.send_socket.listen(5)
@@ -453,7 +450,6 @@ class Node:
                 msg = Message.decode(data)
                 # print("msg::::",msg)
                 self.handle_requests(msg=msg, addr=peer_address,peer_socket = peer_socket)
-
 
     def set_send_mode(self, filename: str, parser_metadata: object): 
         isInfiles =False
@@ -735,7 +731,6 @@ class Node:
         log(node_id=self.node_id, content=log_content)
         self.files.append(filename)
 
-
     def set_download_mode(self, filename: str, parser_metadata):
         file_path = f"{config.directory.node_files_dir}node{self.node_id}/{filename}"
         if os.path.isfile(file_path):
@@ -791,22 +786,6 @@ class Node:
                 },2)
             ]
             # self.split_file_owners(file_owners=file_owners, filename=filename, parser_metadata= parser_metadata)
-    # def search_torrent(self, filename: str) -> dict:
-    #     msg = Node2Tracker(node_id=self.node_id,
-    #                        mode=config.tracker_requests_mode.NEED,
-    #                        filename=filename)
-    #     # temp_port = generate_random_port()
-    #     # search_sock = set_socket(self.port,self.node_ip)
-    #     self.send_segment(sock=self.send_socket,
-    #                       data=msg.encode(),
-    #                       addr=tuple(config.constants.TRACKER_ADDR))
-    #     # now we must wait for the tracker response
-    #     while True:
-    #         data, addr = self.rcv_socket.recvfrom(config.constants.BUFFER_SIZE)
-    #         tracker_msg = Message.decode(data)
-    #         # conn = self.rcv_socket.accept()
-    #         # msg = conn.recv(config.constants.BUFFER_SIZE).decode(FORMAT)
-    #         return tracker_msg
 
     def fetch_owned_files(self) -> list:
         files = []
@@ -834,6 +813,8 @@ class Node:
             files.append(target_file)
         print("specific_files::::",files)
         return files
+
+
 
 def run(args):
     node = Node(node_id=args.node_id,
@@ -977,8 +958,6 @@ def upload_torrent():
         thread.start()
     for thread in threads:
         thread.join() 
-
-
 
 
     update_response(f"Uploading {file_name}")
