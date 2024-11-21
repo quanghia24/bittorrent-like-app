@@ -368,6 +368,8 @@ class Node:
                 # print("msg::::",msg)
                 self.handle_requests(msg=msg, addr=peer_address,peer_socket = peer_socket)
     def set_send_mode(self, filename): 
+        self.files = self.fetch_owned_files()
+
         print(f"set_send_mode received {filename}")
 
         print(self.files)
@@ -404,6 +406,8 @@ class Node:
             t = Thread(target=self.listen, args=())
             t.setDaemon(True)
             t.start()
+        
+
 
     def ask_file_size(self, filename: str, peer_index ,bitfield_pieces_count,to_be_used_owners: list) -> int:
         # temp_port = generate_random_port()
@@ -881,6 +885,8 @@ def main_task():
                     parser = TorrentParser(filepath=filenames)
                     metadata = parser.get_metadata()
 
+                    print(metadata)
+
                     files = [file['path'] for file in metadata['files']]
 
                     threads = []
@@ -922,33 +928,6 @@ def keep_alive():
         # else:
         #     print("failed to send heartbeat")
         time.sleep(15)
-
-def upload_torrent():
-    file_name = torrent_entry.get()
-    if not file_name.endswith('.torrent'):
-        file_name += '.torrent'
-
-    # file_name = "SE_file.torrent"
-    parser = TorrentParser(file_name)
-    parser_metadata = parser.get_metadata()
-
-    filenames = [file['path'] for file in parser_metadata['files']]
-    for f in filenames:
-        update_response(f)
- 
-
-    threads = []
-    for filename in filenames:
-        thread = threading.Thread(target=node.set_send_mode, args=(filename,parser_metadata))
-        threads.append(thread)
-        thread.start()
-    for thread in threads:
-        thread.join() 
-
-
-
-
-    update_response(f"Uploading {file_name}")
 
 
 if __name__ == "__main__":
