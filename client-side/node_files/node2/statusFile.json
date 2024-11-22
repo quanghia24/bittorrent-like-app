@@ -1,17 +1,18 @@
 {
     "1": {
-        "filename": "file_B.txt",
+        "filename": "Fundamentals-of-database-systems-7th.pdf",
         "bitfield_pieces": [
-            0,
-            1
+            6,
+            7,
+            8,
+            5,
+            4
         ],
-        "pieces_count": 2
+        "pieces_count": 9
     },
     "2": {
-        "filename": "file_C.txt",
-        "bitfield_pieces": [
-            0
-        ],
-        "pieces_count": 1
+        "filename": "fundamental.torrent",
+        "bitfield_pieces": [],
+        "pieces_count": 0
     }
 }
