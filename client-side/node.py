@@ -207,9 +207,10 @@ class Node:
 
             elif block_data == -1: 
                 noConnection = True
-                return
+                break
             else:
                 noChunk= True
+                break
         
         if noConnection:
             if peer_index in to_be_used_owners:
@@ -218,7 +219,6 @@ class Node:
                 self.swarm_lock.release()
             return 
         if noChunk:
-            print("No chunk available")
             return
         # if block_offset == piece_length:
         self.swarm_lock.acquire()
@@ -478,7 +478,7 @@ class Node:
             return False
         while True:
             data = temp_sock.recv(config.constants.BUFFER_SIZE)
-            print("data-------------------->", data)
+            # print("data-------------------->", data)
             if data == b'':
                 return -1
             msg = Message.decode(data) # but this is not a simple message, it contains chunk's bytes
@@ -529,7 +529,7 @@ class Node:
         with open(node_files_path, 'w') as file:
             json.dump(data, file, indent=4)
 
-        # print(f"Added entry for ID {len(data)} to {node_files_path}.")
+        print(f"Added entry for ID {len(data)} to {node_files_path}.")
     def split_file_owners(self, file_owners: list, filename: str,parser_metadata):
         owners = []
         bitfield_pieces_count = dict()
@@ -804,6 +804,7 @@ def main_task():
                     metadata = parser.get_metadata()
 
                     # print(metadata)
+
 
                     files = [file['path'] for file in metadata['files']]
 

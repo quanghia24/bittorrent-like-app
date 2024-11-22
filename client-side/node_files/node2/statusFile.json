@@ -14,5 +14,47 @@
         "filename": "fundamental.torrent",
         "bitfield_pieces": [],
         "pieces_count": 0
+    },
+    "3": {
+        "filename": "1_DatabaseSystemConceptsAndArchitecture.pdf",
+        "bitfield_pieces": [
+            5,
+            4,
+            6
+        ],
+        "pieces_count": 7
+    },
+    "4": {
+        "filename": "2_EntityRelationship-Model-241.pdf",
+        "bitfield_pieces": [
+            0,
+            17,
+            15,
+            14,
+            2,
+            6,
+            12,
+            1,
+            21,
+            11,
+            8,
+            3,
+            5,
+            19,
+            20,
+            4,
+            16,
+            13,
+            9,
+            18,
+            10,
+            7
+        ],
+        "pieces_count": 22
+    },
+    "5": {
+        "filename": "sample.torrent",
+        "bitfield_pieces": [],
+        "pieces_count": 0
     }
 }
